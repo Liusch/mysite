@@ -1,0 +1,200 @@
+/*ОЧИЩЕНИЕ ОТСТУПОВ И ГРАНИЦ*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*ИЗМЕНЕНИЕ АЛГОРИТМОВ РАСЧЁТА РАЗМЕРА БЛОКОВ*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*УДАЛЕНИЕ ЛИНИЙ ОБВОДКИ*/
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*ПРИМЕНЕНИЕ СВОЙСТВА БЛОКОВ К ЭЛЕМЕНТАМ*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*СТАНДАРТ ПОВЕДЕНИЯ ШРИФТОВ И ЭЛЕМЕНТОВ ДЛЯ РАЗНЫХ БРАУЗЕРОВ*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*НАСЛЕДОВАНИЕ ТЕГАМИ ШРИФТОВ*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*КОРРЕКТИРОВАНИЕ РАЗЛИЧНЫХ ЭЛЕМЕНТОВ В РАЗНЫХ БРАУЗЕРАХ*/
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+/*----------------------------------*/
+
+body {
+  background: #e8e8e8 url(../img/Ellipse1copy.png) 50% 125px no-repeat;
+}
+.content {
+  margin: 0 auto;
+  max-width: 841px;
+  padding: 153px 0 137px 0;
+  color: rgb(39, 61, 70);
+}
+.content-heading {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.6;
+  text-transform: uppercase;
+  line-height: 2.857;
+  text-align: center;
+  letter-spacing: 2.8px;
+}
+.content-title {
+  width: 750px;
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 1.389;
+  text-align: center;
+  font-weight: 400;
+}
+.content-picture {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin: 70px auto;
+}
+.content-picture__image {
+  max-width: 100%;
+}
+.content-text {
+  font-size: 24px;
+  opacity: 0.8;
+  line-height: 1.667;
+}
+.content-text p {
+  padding: 20px 45px;
+}
+.content-text p:last-child {
+  padding-bottom: 0;
+}
+.content-list {
+  margin: 40px 75px 50px;
+}
+.list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.list li {
+  position: relative;
+}
+.list li:nth-child(1) {
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.list li:nth-child(2) {
+  font-style: italic;
+  color: rgb(128, 183, 179);
+}
+.list li:nth-child(3) {
+  font-weight: bold;
+}
+.list li:nth-child(4) {
+  color: rgba(39, 61, 70, 0.302);
+  text-decoration: line-through;
+}
+.list li:before {
+  color: #80b7b3;
+  content: "\2714";
+  position: absolute;
+  left: -30px;
+  bottom: -5px;
+  font-size: 26px;
+  opacity: 1;
+  font-weight: 700;
+  text-shadow: none;
+  font-style: normal;
+}
+.list li:hover {
+  color: #80b7b3;
+}
+.list li:hover:before {
+  color: #80b7b3;
+}
+.content-button {
+  padding: 0 45px;
+}
+
+.button__fullstory {
+  letter-spacing: 3px;
+  padding: 14px 55px 13px 26px;
+  font-size: 14px;
+  font-family: "Arial";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2.857;
+  background-color: #80b7b3;
+  border-radius: 30px;
+  position: relative;
+}
+.button__fullstory:after {
+  content: "\2192";
+  font-size: 24px;
+  position: absolute;
+  right: 24px;
+  bottom: -12px;
+}
+
+.button__fullstory:hover {
+  background-color: #658f8c;
+}
+
+.button__fullstory:active {
+  background-color: #c4c4c4;
+}
